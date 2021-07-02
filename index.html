@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="background" id="main">
+  <title>Party Role Survey</title>
+  <div id="title-div">
+  <h1 id="title">Party Role Survey</h1>
+  </div>
+  <div id="description-div">
+  <p id="description">What role do you play in RPGs?</p>
+  </div>
+  
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input
+               type="text"
+               name="name"
+               id="name"
+               placeholder="Enter your name"
+               required
+               />
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               placeholder="Enter your email"
+               required
+               />
+      </div>
+      <div>
+        <label id="number-label" for="number">Age</label>
+        <input
+               type="number"
+               name="age"
+               id="number"
+               min="10"
+               max="99"
+               placeholder="Age"
+               />
+      </div>
+      <div>
+        <p>What role do you currently play?</p>
+        <select id="dropdown" name="role-select" required>
+          <option value="tank">Tank</option>
+          <option value="damage">Damage</option>
+          <option value="support">Support</option>
+        </select>
+      </div>
+      <div>
+        <p>Do you enjoy your role?</p>
+        <label>
+          <input
+                 name="user-enjoy"
+                 value="yes"
+                 type="radio"
+                 checked
+                 />
+          Yes</label>
+        <label>
+          <input
+                 name="user-enjoy"
+                 value="No"
+                 type="radio"
+                 checked
+                 />
+          No</label>
+      </div>
+      <div>
+        <p>What roles interest you?</p>
+        <label>
+          <input
+                 name="interest"
+                 value="tank"
+                 type="checkbox"
+                 />
+          Tank</label>
+        <label>
+          <input
+                 name="interest"
+                 value="damage"
+                 type="checkbox"
+                 />
+          Damage</label>
+        <label>
+          <input
+                 name="interest"
+                 value="support"
+                 type="checkbox"
+                 />
+          Support</label>
+      </div>
+      <div>
+        <p>Any additional comments?</p>
+        <textarea
+                  id="comments"
+                  name="comments"
+                  placeholder="Enter your comments here..."
+                  ></textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  
+  
+</main>
+</body>
+</html>

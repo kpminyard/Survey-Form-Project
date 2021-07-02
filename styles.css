@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+  }
+  
+  div {
+    color: white;
+    margin: auto;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #222222;
+    padding: 2%;
+  }
